@@ -9,7 +9,7 @@ This was a personal project, built to avoid bloated third-party apps full of ads
 ## 🧩 Features
 
 - Download individual YouTube videos or entire playlists as MP3
-- Automatically selects the best available audio quality
+- You can select the audio quality
 - Organizes files into folders named after the playlist
 - Runs fully offline with local `yt-dlp` and `ffmpeg` (no global installs required)
 - Clean GUI with a simple input field for the URL
@@ -20,14 +20,13 @@ This was a personal project, built to avoid bloated third-party apps full of ads
 
 ```
 YouTubeDownloader/
-├── baixar_mp3.exe       # Main executable (built with PyInstaller)
+├── gui.py       # Gui
 ├── yt-dlp.exe           # yt-dlp binary
 ├── ffmpeg/
 │   └── bin/
 │       ├── ffmpeg.exe
 │       ├── ffprobe.exe
 │       └── ...
-└── Music/               # (auto-created) Final MP3 files are saved here
 ```
 
 ---
@@ -37,11 +36,11 @@ YouTubeDownloader/
 1. Download or clone this repository
 2. Place `yt-dlp.exe` in the project root
 3. Download and extract `ffmpeg`, placing it inside `ffmpeg\bin\`
-4. Run `baixar_mp3.exe`
+4. Run `gui.py`
 5. Paste a YouTube video or playlist link
 6. Click OK — the download and conversion will start automatically
 
-The final MP3 files will be saved under `Music\[Playlist Name]\`.
+The final MP3 files will be saved where you have selected.
 
 ---
 
